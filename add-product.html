@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Products</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/addview.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/select2.min.css" type="text/css" media="all" />
+
+
+
+<body>
+
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="navbar-brand nav-brand-bg mx-auto">
+
+
+        <img src="assets/navbar-logo.png" alt="logo">
+      </div>
+
+
+      <ul class="list-unstyled components mb-5 side-nav">
+        <li>
+          <a href="dashboard.html" class="nav-link-content"><span class="fas fa-th-large list-icon"></span><span
+              class="nav-text">Dashboard</span></a>
+        </li>
+        <li>
+          <a href="#" data-toggle="collapse" class="togglenavigation nav-link-content" data-target="#submenu-2"><span
+              class="fas fa-shopping-bag list-icon"></span><span class="nav-text">Products</span> <i
+              class="fa fa-fw fa-angle-down pull-right sub-menu-toggle"></i></a>
+          <ul id="submenu-2" class="collapse hidesubmenu sub-side-nav">
+            <li><a href="submenu-one.html">SUBMENU </a></li>
+            <li><a href="submenu-one.html">SUBMENU</a></li>
+            <li><a href="submenu-one.html">SUBMENU </a></li>
+          </ul>
+        </li>
+        <li class="active">
+            <a href="product.html" class="nav-link-content"><span class="fas fa-shopping-bag list-icon"></span><span
+                class="nav-text">Products</span></a>
+          </li>
+        <li>
+          <a href="orders.html" class="nav-link-content"><span class="fas fa-archive list-icon"></span><span
+              class="nav-text">Orders</span></a>
+        </li>
+        <li>
+          <a href="customers.html" class="nav-link-content"><span class="fas fa-users list-icon"></span><span
+              class="nav-text">Customers</span></a>
+        </li>
+        <li>
+          <a href="analytics.html" class="nav-link-content"><span class="fas fa-chart-line list-icon"></span><span
+              class="nav-text">Analytics</span></a>
+        </li>
+        <li>
+          <a href="manufacturers.html" class="nav-link-content"><span class="fab fa-buffer list-icon"></span><span
+              class="nav-text">Manufacturer</span></a>
+        </li>
+        <li>
+          <a href="file-storage.html" class="nav-link-content"><span class="fas fa-file list-icon"></span><span
+              class="nav-text">File Storage</span></a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-link-content"><span class="fas fa-cog list-icon"></span><span
+              class="nav-text">Settings</span></a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-clr">
+        <div class="container-fluid p-0">
+
+          <button type="button" id="sidebarCollapse" class="btn pl-0">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </button>
+
+          <div class="input-group col-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text input-search " id="basic-addon1"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control input-search-box" placeholder="Search" aria-label="SearchBox"
+              aria-describedby="basic-addon1">
+          </div>
+
+          <ul class="nav navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+              </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-img">
+                  <p>JD</p>
+                </div>
+                <p class="profile-p">John Duo</p>
+
+              </a>
+              <div class="dropdown-menu profile-toggle-bar" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="#">Change Password</a>
+                <a class="dropdown-item" href="index.html">Log Out</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="menu-heading mt-3 d-flex">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="product.html">Product</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Add Product</li>
+
+            </ol>
+          </nav>
+
+        </div>
+
+        <div class="card col-12">
+
+          <div class="card-body">
+
+
+            <div class="panel-body d-flex flex-wrap">
+              <div class="form-group col-md-12 col-lg-12">
+                <label for="fname">Name</label>
+                <input id="fname" class="form-control" type="text">
+              </div>
+              <div class="form-group col-md-12 col-lg-12">
+                <label for="fname">Description</label>
+                
+            <textarea id="category">
+            </textarea>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname">Status</label>
+
+                <select class="custom-select">
+                  <option selected>Select Status</option>
+                  <option value="1">Draft</option>
+                  <option value="2">Active</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname">Organization</label>
+
+                <select class="custom-select">
+                  <option selected>Select Organization</option>
+                  <option value="1">Sample Text</option>
+                  <option value="2">Sample Text</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname">Vendor</label>
+
+                <select class="custom-select">
+                  <option selected>Select Vendor</option>
+                  <option value="1">Vendor 1</option>
+                  <option value="2">Vendor 2</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname">Manufacturer</label>
+
+                <select class="custom-select custom-select-search">
+                  <option selected>Select Manufacturer</option>
+                  <option value="1">Sample</option>
+                  <option value="2">Vendor 2</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname"></label>
+                <div class="file-input file-input-custom d-flex">
+                  <input type="file" name="file-input" id="file-input" class="file-input__input"/>
+                  <label class="file-input__label file-input-custom-label" for="file-input">
+                    
+                    <i class="fas fa-file-upload text-primary pr-2"></i>
+                    <span>Click to upload file</span></label>
+                    <p class="file-return"></p>
+                </div>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname">Tags</label>
+
+                <select class="custom-select" multiple="multiple">
+                    <option selected="selected">orange</option>
+                    <option>Banana</option>
+                    <option selected="selected">Fruits</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4 col-lg-4">
+                <label for="fname"></label>
+                <div class="form-check">
+                    <input class="form-check-input custom-check-btn" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label custom-check-label-btn" for="flexCheckDefault">
+                      Mark as new
+                    </label>
+                  </div>
+              </div>
+            </div>
+            <hr>
+        
+            <div class="menu-heading">
+              <h6>SEO Settings</h6>
+              <div class="panel-body d-flex flex-wrap">
+              <div class="form-group col-md-6 col-lg-6">
+                <label for="fname">Page Title</label>
+                <input id="fname" class="form-control" type="text">
+              </div>
+              <div class="form-group col-md-6 col-lg-6">
+                <label for="fname">URL Handle</label>
+                <input id="fname" class="form-control" type="text">
+              </div>
+              <div class="form-group col-md-6 col-lg-6">
+                <label for="fname">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            
+            </div>
+            </div>
+            <a href="#" class="btn navlink-main-btn">Submit</a>
+            <a href="#" class="btn btn-secondary">Reset</a>
+          </div>
+          
+
+        </div>
+
+        <div class="card border-rounded mt-3">
+            <div class="card-header with-border clearfix">
+              <div class="card-title mb-0">
+               <h6> <i class="fas fa-wallet"></i> Varient</h6>
+               </div>
+               </div>
+               <div class="panel-body">
+               <div class="d-flex">
+                <div class="list-group custom-list-group">
+                    <p class="text-center">Varient list</p>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <i class="fas fa-palette"></i> Color
+                    </a>
+                    
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-balance-scale-right"></i> Weight</a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Add Varient</a>
+                     </div>
+                  <!-- table -->
+                 
+                  <table class="table table-hover custom-table table-bordered">
+                    
+                    <thead>
+                      <tr>
+                        <th scope="col">Varient Name</th>
+                        <th scope="col">Varient 1</th>
+                        <th scope="col">Varient 2</th>
+                        <th scope="col">Varient 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <td >Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          
+                          <tr>
+                            <th>4</th>
+                            <td >Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                    </tbody>
+                
+                  </table>
+                </div>
+                <div class="varient-show">
+
+                
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Varient Options</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Barcode</th>
+                        <th scope="col">Status</th>
+                        <th scope="col" class="table-action"><a href="#">Action</a></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><div class="file-input d-flex">
+                            <input type="file" name="file-input" id="file-input" class="file-input__input"/>
+                            <label class="file-input__label" for="file-input">
+                              
+                              <i class="fas fa-file-upload text-primary pr-2"></i>
+                              <span>Click to upload file</span></label>
+                              
+                          </div></td>
+                        <td>Red</td>
+                        <td>SKU</td>
+                        <td>Barcode</td>
+                        <td><div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
+                          </div></td>
+                        <td class="table-action">
+                            <i class="fas fa-edit"></i>
+                            <i class="fa fa-trash" aria-hidden="true" href="#exampleModal" data-toggle="modal"
+                              data-target="#exampleModal"></i>
+                          </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete User</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure you really want to delete this record?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn navlink-main-btn">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+               
+              </div>
+            </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap-select.js" type="text/javascript"></script>
+  <script src="js/toaster.js"></script>
+  <script src="js/ckeditor/ckeditor.js"></script>
+  <script src="js/ckeditor/adapters/jquery.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $('.custom-select').select2({
+    minimumResultsForSearch: -1
+    });
+
+    // Tags custom select
+    $(".custom-select").select2({
+    tags: true,
+    tokenSeparators: [',', ' ']
+})
+    // serach enable in manufacture dropdown
+    $('.custom-select-search').select2();
+
+    $('#category' ).ckeditor();
+</script>
+</body>
+
+</html>
